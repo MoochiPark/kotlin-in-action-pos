@@ -1,4 +1,4 @@
-package dev.playgroud
+package dev.playgroud.repository
 
 class Inventory(
     private val stockList: HashMap<Int, Int> = hashMapOf(
@@ -21,5 +21,5 @@ class Inventory(
     private fun stockUpdate(barcodeNumber: Int, stock: Int): Int? =
         this.stockList.put(barcodeNumber, stock)
 
-    fun printStocks() = this.stockList.forEach { println(it) }
+    fun getAll() = this.stockList
 }

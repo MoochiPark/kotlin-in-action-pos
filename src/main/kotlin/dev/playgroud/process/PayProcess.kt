@@ -1,10 +1,13 @@
-package dev.playgroud
+package dev.playgroud.process
 
+import dev.playgroud.repository.Inventory
+import dev.playgroud.repository.ItemRepository
+import dev.playgroud.ShoppingBasket
 import java.lang.NumberFormatException
 
 class PayProcess(
     private val inventory: Inventory,
-    private val itemRepository: ItemRepository = ItemRepository(),
+    private val itemRepository: ItemRepository,
     private val shoppingBasket: ShoppingBasket = ShoppingBasket(),
 ) {
     fun run() {

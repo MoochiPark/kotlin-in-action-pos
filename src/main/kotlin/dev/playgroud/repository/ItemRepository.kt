@@ -1,4 +1,6 @@
-package dev.playgroud
+package dev.playgroud.repository
+
+import dev.playgroud.Item
 
 class ItemRepository(
     private val items: HashMap<Int, Item> = hashMapOf(
